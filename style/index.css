@@ -58,7 +58,7 @@ html {
     margin:1%;
     display:flex;
     justify-content:space-between;
-    align-content:flex-start;
+    align-items:flex-start;
 }
 .myName {
     font-size:40px;
@@ -66,6 +66,7 @@ html {
 }
 .topButtons {
     font-size:28px;
+    flex-direction:row;
     justify-content:space-between;
 }
 .about {
@@ -164,6 +165,7 @@ h1 {
 }
 .container2 {
     display:flex;
+    justify-content:space-around;
 }
 .container2 img {
     max-width:33%;
@@ -181,6 +183,7 @@ h1 {
     border:1px solid black;
     text-align:center;
 }
-.contact {
-    text-align:center;
+.bottomcont {
+    display:flex;
+    justify-content:center;
 }
