@@ -91,9 +91,10 @@ html {
 /* TOPPY SECTION ENDS */
 /* MAIN SPLASH SECTION BEGINS */
 .bigSplash {
-    margin:2% 10% 2% 10%;
+    margin:2% 10% 1% 10%;
     display:flex;
     justify-content:center;
+    flex-wrap:wrap;
 }
 .stMark {
     display:block;
@@ -110,22 +111,20 @@ h1 {
     padding:10px;
     opacity:0.8;
     border-radius:20px;
-    position:absolute;
-    top:40%;
-    left:38%;
-    transform:translate(-50,50)
+    transform:translate(-50,50);
+    margin:1%;
+    justify-content:center;
 }
 .picClick {
     font-size:40px;
     color:white;
     background-color:#FF0000;
     border-radius:20px;
-    padding:10px;
+    padding:2%;
     opacity:0.8;
-    position:absolute;
-    top: 55%;
-    left:45%;
     border:2px solid black;
+    width:90%;
+    justify-content:space-around;
 }
 .picClick:hover {
     background-color:#171796;
@@ -136,6 +135,8 @@ h1 {
 /* GIGANTO DIV GRID SECTION START */
 .powerGrid1 {
     margin:1%;
+    display:flex;
+    flex-wrap:wrap;
 }
 .hello {
     font-size:24px;
@@ -145,45 +146,137 @@ h1 {
 }
 .container1 {
     display:flex;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+    margin-bottom:1%;
 }
 .container1 img {
-    max-width:33%;
+    max-width:100%;
     max-height:auto;
 }
 .mostarGym {
-    border:1px solid black;
     text-align:center;
     object-fit:contain;
+    max-width:33%;
 }
 .mostarBridge {
-    border:1px solid black;
     text-align:center;
+    max-width:33%;
 }
 .sarajevoFood {
-    border:1px solid black;
     text-align:center;
+    max-width:33%;
 }
 .container2 {
     display:flex;
-    justify-content:space-around;
+    justify-content:space-between;
 }
 .container2 img {
-    max-width:33%;
+    max-width:100%;
     max-height:auto;
 }
 .sarajevoMosque {
-    border:1px solid black;
     text-align:center;
+    max-width:33%;
 }
 .zagrebStation {
-    border:1px solid black;
     text-align:center;
+    max-width:33%;
 }
 .mostarBurger {
-    border:1px solid black;
     text-align:center;
+    max-width:33%;
 }
 .bottomcont {
     display:flex;
     justify-content:center;
 }
+/* MEDIA QUERY FOR TABLET START */
+@media (max-width:800px){
+.toppy {
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    }
+    .myName {
+        justify-content:center;
+    }
+    .topButtons {
+        flex-direction:column;
+        justify-content:space-between;
+        margin:3%;
+    }
+    .bigSplash {
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items:center;
+    }
+    .stMark {
+        margin-bottom:1%;
+    }
+    h1 {
+        text-align:center;
+    }
+    .myProjects {
+        margin:5%;
+        width:35%;
+    }
+}
+/* MEDIA QUERY FOR TABLET END */
+/* MEDIA QUERY FOR PHONE START */
+@media (max-width:500px){
+.toppy {
+flex-direction:column;
+align-items:center;
+justify-content:space-between;
+}
+.topButtons {
+    margin:3%;
+    display:flex;
+    flex-flow:column wrap;
+}
+.about {
+    width:90%;
+    text-align:center;
+}
+.contact {
+    width:90%;
+    margin:1%;
+    text-align:center;
+}
+.projects {
+    width:90%;
+    margin:1%;
+    text-align:center;
+}
+.bigSplash {
+    display:flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+}
+h1 {
+    width:90%;
+    margin:2%;
+    text-align:center;
+    justify-content:center;
+}
+.picClick{
+    display:flex;
+    width:90%;
+    justify-content:space-around;
+}
+.powerGrid1 {
+    display:flex;
+    flex-wrap:wrap;
+}
+.container1 {
+    display:flex;
+    flex-wrap:wrap;
+}
+.container2 {
+    display:flex;
+    flex-wrap:wrap;
+}
+}
+/* MEDIA QUERY FOR PHONE END */
